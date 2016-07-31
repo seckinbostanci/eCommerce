@@ -1,6 +1,7 @@
 package com.seckinbostanci.controller;
 
 import com.seckinbostanci.dao.ProductDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +16,8 @@ import java.io.IOException;
 @Controller
 public class HomeController {
 
-    ProductDao productDao = new ProductDao();
+    @Autowired
+    private ProductDao productDao;
 
     @RequestMapping("/")
     public String home() {
@@ -24,7 +26,7 @@ public class HomeController {
 
     @RequestMapping("/products")
     public String products(Model model) {
-        model.addAttribute("products",productDao.getProductList());
+        model.addAttribute("products",productDao.getAllProducts());
         return "products";
     }
 
