@@ -22,7 +22,7 @@ public class HomeController {
     @RequestMapping("/products")
     public String product(Model model) {
 
-        model.addAttribute("product",productDao.getProductList().get(0));
+        model.addAttribute("products",productDao.getProductList());
 
         return "products";
     }
