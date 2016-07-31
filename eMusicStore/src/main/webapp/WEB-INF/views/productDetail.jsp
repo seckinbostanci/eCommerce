@@ -20,7 +20,7 @@
                     <p>${product.description}</p>
                     <p>${product.category}</p>
                     <p>${product.stock}</p>
-                    <p>${product.price}</p>
+                    <p>${product.price} TL + KDV</p>
                     <p class="bottom"><a href="<c:url value="/products" />">BACK</a></p>
                 </div>
             </div>
