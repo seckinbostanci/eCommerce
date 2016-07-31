@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="<c:url value="/resources/favicon.ico"/>">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>eMusicStore</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
@@ -39,8 +39,8 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li class="active"><a href="<c:url value="/" />">Home</a></li>
+                        <li><a href="<c:url value="/products" />">Products</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
