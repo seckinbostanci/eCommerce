@@ -16,11 +16,12 @@
                     <img src="#" style="width: 100%; height: 300px" />
                 </div>
                 <div class="col-md-6">
-                    <h3>ProductName</h3>
-                    <p>ProductDescribe</p>
-                    <p>Category</p>
-                    <p>Stock</p>
-                    <p>Price</p>
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p>${product.category}</p>
+                    <p>${product.stock}</p>
+                    <p>${product.price}</p>
+                    <p class="bottom"><a href="<c:url value="/products" />">BACK</a></p>
                 </div>
             </div>
         </div>
