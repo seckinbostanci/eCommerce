@@ -20,11 +20,14 @@ public class HomeController {
     }
 
     @RequestMapping("/products")
-    public String product(Model model) {
-
+    public String products(Model model) {
         model.addAttribute("products",productDao.getProductList());
-
         return "products";
+    }
+
+    @RequestMapping("/products/view")
+    public String product(){
+        return "productDetail";
     }
 
 }
