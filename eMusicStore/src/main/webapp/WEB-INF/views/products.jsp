@@ -31,7 +31,7 @@
                     <td>${product.category}</td>
                     <td>${product.stock}</td>
                     <td>${product.price}</td>
-                    <td><i class="glyphicon glyphicon-barcode"></i></td>
+                    <td><a href="<c:url value="/products/view/${product.id}"/>"><i class="glyphicon glyphicon-barcode"></i></a></td>
                 </tr>
             </c:forEach>
             </tbody>
